@@ -18,3 +18,14 @@ This landing page is designed to provide comprehensive information about the mas
 
 ![programs3](https://github.com/bekzat051102/master-s-and-PnD-landing-page/assets/153498060/60bc8901-6b4b-4763-8001-81fad40d5823)
 
+
+## Technologies Used
+
+### Frontend
+- **HTML**: Used to structure the content on the web pages.
+- **CSS**: Used to style the web pages and create visually appealing designs.
+- **JavaScript**: Used to add interactivity and dynamic elements to the web pages.
+
+### Backend
+- **Python (Django)**: Used to create the admin panel for managing the content of the landing page.
+
