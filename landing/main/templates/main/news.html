@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block links %}
+<a href="{% url 'main:main_page' %}" class="hover-underline">home</a>
+<a href="{% url 'main:about_page' %}" class="hover-underline">about</a>
+<a href="{% url 'main:programs_page' %}" class="hover-underline">programs</a>
+<a href="{% url 'main:main_page' %}" class="hover-underline">teacher</a>
+<a href="{% url 'main:news_page' %}" class="hover-underline">news</a>
+<a href="{% url 'main:main_page' %}" class="hover-underline">contact</a>
+{% endblock %}
+{% block content %}
+{% for one_news in all_news %}
+ <section class="news" id="news">
+
+        <h1 class="heading">our news</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image shine">
+                    <img src="{{one_news.image.url}}" alt="">
+                    <h3>{{one_news.date}}</h3>
+                </div>
+                <div class="content">
+                    <h3>{{one_news.title}}</h3>
+                    <p>{{one_news.text}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endfor %}
+
+{% endblock %}

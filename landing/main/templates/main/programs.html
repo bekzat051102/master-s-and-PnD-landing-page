@@ -1,0 +1,277 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block links %}
+<a href="{% url 'main:main_page' %}" class="hover-underline">home</a>
+<a href="{% url 'main:about_page' %}" class="hover-underline">about</a>
+<a href="{% url 'main:programs_page' %}" class="hover-underline">programs</a>
+<a href="{% url 'main:main_page' %}" class="hover-underline">teacher</a>
+<a href="{% url 'main:news_page' %}" class="hover-underline">news</a>
+<a href="{% url 'main:main_page' %}" class="hover-underline">contact</a>
+{% endblock %}
+{% block content %}
+
+<section class="course">
+        <div class="box-contain">
+            <div class="box-1">
+                <div class="content-2">
+                    <h3>admission admission to master's degree</h3>
+                    <div class="icons">
+                        <div class="read-more">
+                            <a href="#master" class="btn">
+                                <span class="text text-1">admission</span>
+                                <span class="text text-2" aria-hidden="true">admission</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-contain">
+            <div class="box-1">
+                <div class="content-2">
+                    <h3>admission to PhD and postgraduate studies</h3>
+                    <div class="icons">
+                        <div class="read-more">
+                            <a href="#phd" class="btn">
+                                <span class="text text-1">admission</span>
+                                <span class="text text-2" aria-hidden="true">admission</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+
+        <h3 class="heading" id="master">admission admission to master's degree</h3>
+
+        <div class="container">
+
+            <div class="about-content">
+                <h3>List of master's degree areas:</h3>
+                <ul>
+                    <li>Data Science in Finance</li>
+                    <li>Informatics and Computer Science</li>
+                    <li>Business analytics</li>
+                    <li>Economics of Development</li>
+                    <li>Pedagogy</li>
+                    <li>Linguistics</li>
+                    <li>International relationships</li>
+                    <li>Media, Artificial Intelligence and Art (Journalism)</li>
+                    <li>Jurisprudence (Business Law)</li>
+                    <li>Psychology</li>
+                    <li>Philology</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="course">
+        <div class="box-contain">
+
+            <div class="box-1">
+                <div class="image shine">
+                    <img src="{% static 'images/calendar.png' %}" alt="">
+                </div>
+                <div class="content-2">
+                    <h3>work days</h3>
+                    <p>Monday-Friday, from 9:00 to 17:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-contain">
+
+            <div class="box-1">
+                <div class="image shine">
+                    <img src="{% static 'images/calendar2.png' %}" alt="">
+                </div>
+                <div class="content-2">
+                    <h3>studying period</h3>
+                    <p>2 years (2.5 years for distance learning)</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-contain">
+
+            <div class="box-1">
+                <div class="image shine">
+                    <img src="{% static 'images/docs.png' %}" alt="">
+                </div>
+                <div class="content-2">
+                    <h3>Documents for admission</h3>
+                    <p>accepted from July 17 to October 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+
+        <div class="container">
+
+            <div class="about-content">
+                <h3>Documents for admission to the master's program:</h3>
+                <ul>
+                    <li>Diploma (original)</li>
+                    <li>2 photos 3x4</li>
+                    <li>Copy of passport (original for viewing)</li>
+                    <li>Personal sheet for personnel records</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about">
+
+        <h3 class="heading" id="phd">admission to PhD and postgraduate studies</h3>
+
+        <div class="container">
+
+            <div class="about-content">
+                <h3>Postgraduate Programs</h3>
+                <ul>
+                    <li>Economic theory – 08.00.01</li>
+                    <li>Economics and management of the national economy – 08.00.05</li>
+                    <li>Comparative - historical, typological and comparative linguistics – 02/10/20</li>
+                    <li>General pedagogy, history of pedagogy and education – 13.00.01</li>
+                    <li>Social philosophy – 09.00.11</li>
+                    <li>History and theory of culture – 24.00.01</li>
+                </ul>
+            </div>
+
+            <div class="about-content">
+                <h3>Doctoral Programs (PhD)</h3>
+                <ul>
+                    <li>Computer and information technology</li>
+                    <li>Pedagogy</li>
+                    <li>Philology</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="course">
+        <div class="box-contain">
+
+            <div class="box-1">
+                <div class="image shine">
+                    <img src="{% static 'images/calendar.png' %}" alt="">
+                </div>
+                <div class="content-2">
+                    <h3>work days</h3>
+                    <p>Monday-Friday, from 9:00 to 17:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-contain">
+
+            <div class="box-1">
+                <div class="image shine">
+                    <img src="{% static 'images/docs.png' %}" alt="">
+                </div>
+                <div class="content-2">
+                    <h3>Documents for admission</h3>
+                    <p>accepted from August 1 to November 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+
+        <div class="container">
+
+            <div class="about-content">
+                <h3>Documents for admission to PhD and postgraduate studies</h3>
+                <ul>
+                    <li>Personal sheet for personnel records</li>
+                    <li>Autobiography</li>
+                    <li>Characteristic</li>
+                    <li>Copy of university graduation diploma</li>
+                    <li>Copy of diploma supplement</li>
+                    <li>Copy of the passport</li>
+                    <li>Abstract or list of published works, information about inventions</li>
+                    <li>Photo cards 4x6 – 1 pc. 3x4 – 2pcs</li>
+                    <li>Copy of work record book (copy with stamp)</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about">
+        <div class="container">
+
+            <div class="about-content">
+                <h3>Registration Office:</h3>
+                <p>
+                    Ala-Too International University<br>
+                    Address: 1/8 Ankara street, Bishkek city, Kyrgyzstan Country<br>
+                    <b>Tel:</b>+996 (312) 631 425<br>
+                    <b>WhatsApp:</b>+996 555 820 000 (WhatsApp)<br>
+                    <ul><b>E-mail:</b>
+                        <li><a href="mailto:info@alatoo.edu.kg" class="link">info@alatoo.edu.kg</a></li>
+                        <li><a href="mailto:postgraduate@alatoo.edu.kg" class="link">postgraduate@alatoo.edu.kg</a></li>
+                        <li><a href="mailto:burul.shambetova@alatoo.edu.kg" class="link">burul.shambetova@alatoo.edu.kg</a></li>
+                        <li><a href="mailto:aikokul.mamaeva@alatoo.edu.kg" class="link">aikokul.mamaeva@alatoo.edu.kg</a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>find us here</h3>
+                <p>Below are our social networks where you can watch our activities and events</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/AlaTooInternationalUniversity/" target="_blank"
+                        class="fab fa-facebook-f"></a>
+                    <a href="https://www.youtube.com/@aiutv9125" target="_blank" class="fab fa-youtube"></a>
+                    <a href="https://www.instagram.com/alatoo.edu.kg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.tiktok.com/@alatoo.uni?_t=8lQyfPi7aBm&_r=1" target="_blank"
+                        class="fab fa-tiktok"></a>
+                    <a href="https://t.me/+37SFo81Jl4RiMTU6" target="_blank" class="fab fa-telegram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+996 (777) 77 77 77</p>
+                <a href="mailto:info@alatoo.edu.kg" class="link">info@alatoo.edu.kg</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>
+                    Country: Kyrgyzstan<br>
+                    City: Bishkek <br>
+                    1/8 Ankara street<br>
+                    <a href="https://maps.app.goo.gl/96VDVNbLFsRVMkeJ9" target="_blank">google maps localization</a>
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>main web-site</h3>
+                <p>
+                    <a href="https://alatoo.edu.kg/#" target="_blank">our main web-site</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="footer-1">
+            <p>&copy International Ala-Too University 2024</p>
+        </div>
+    </section>
+
+{% endblock %}

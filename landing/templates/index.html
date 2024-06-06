@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIU Master's and PhD degrees</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="{% url 'main:main_page' %}" class="logo"><img src="{% static 'images/ALATOO-LOGO.png' %}" alt="logo"></i></a>
+
+        <nav class="navbar">
+            {% block links %}
+            <a href="{% url 'main:main_page' %}" class="hover-underline">home</a>
+            <a href="#about" class="hover-underline">about</a>
+            <a href="#courses" class="hover-underline">programs</a>
+            <a href="#teacher" class="hover-underline">teacher</a>
+            <a href="#news" class="hover-underline">news</a>
+            <a href="#contact" class="hover-underline">contact</a>
+            {% endblock %}
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts-->
+{% block content %}
+    <section class="home" id="home">
+
+        <div class="content">
+            <p>AlaToo International University</p>
+            <h3>Where ideas become careers</h3>
+            <a href="{% url 'main:programs_page' %}" class="btn">
+                <span class="text text-1">admission</span>
+                <span class="text text-2" aria-hidden="true">admission</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about us</h1>
+
+        <div class="container">
+
+            <figure class="about-image">
+                <img src="{% static 'images/about.jpg' %}" alt="" height="500">
+                <img src="{% static 'images/about-1.jpg' %}" alt="" class="about-img">
+            </figure>
+
+            <div class="about-content">
+                <h3>18 years of experience</h3>
+                <p>
+                    Ala-Too International University is dedicated to educating
+                    and empowering our students to become professionals and leaders of
+                    their communities in Central Asia and in the world.
+                </p>
+                <p>
+                    In 2013, AIU opened the IT&Business College, and then the Distance Learning Center,
+                    master's and postgraduate courses, which expanded the prospects for new growth and
+                    development of the university. Today AIU has 4 academic faculties, 19 undergraduate programs,
+                    2 bachelor's degree programs, 2 master's degree programs, 10 master's programs, 6 postgraduate
+                    programs,
+                    3 doctoral / Ph.D programs and 3 institutes.
+                </p>
+                <a href="{% url 'main:about_page' %}" class="btn">
+                    <span class="text text-1">read more</span>
+                    <span class="text text-2" aria-hidden="true">read more</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- courses section starts -->
+
+    <section class="courses" id="courses">
+
+        <h1 class="heading">our famous programs</h1>
+
+        <div class="box-container">
+        	{% block programs %}
+        	{% endblock %}
+       
+
+        </div>
+        <div class="read-more">
+            <a href="{% url 'main:programs_page' %}" class="btn">
+                <span class="text text-1">read more</span>
+                <span class="text text-2" aria-hidden="true">read more</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- courses section ends -->
+
+    <!-- teacher section starts -->
+
+    <section class="teacher" id="teacher">
+
+        <h1 class="heading">our expert teacher</h1>
+
+        <div class="box-container">
+        	{% block teachers %}
+        	{% endblock %}
+        </div>
+
+    </section>
+
+    <!-- teacher section ends -->
+
+
+    <!-- news section starts -->
+
+    <section class="news" id="news">
+
+        <h1 class="heading">our news</h1>
+
+        <div class="box-container">
+        	{% block content_news %}
+        	{% endblock %}
+        </div>
+        <div class="read-more">
+            <a href="{% url 'main:news_page' %}" class="btn">
+                <span class="text text-1">read more</span>
+                <span class="text text-2" aria-hidden="true">read more</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- news section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">contact us</h1>
+        <div class="row">
+            <form class="email-form" id="emailForm" onsubmit="sendEmail(event)">
+                <h3>send us a message</h3>
+                <input type="text" id="name" placeholder="name" class="box" required>
+                <input type="email" id="email" placeholder="email" class="box" required>
+                <input type="number" id="phone" placeholder="phone number" class="box" required>
+                <textarea id="message" placeholder="message" class="box" cols="30" rows="10" required></textarea>
+                <button type="submit" class="btn">
+                    <span class="text text-1">send message</span>
+                    <span class="text text-2" aria-hidden="true">send message</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section stars -->
+{% endblock %}
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>find us here</h3>
+                <p>Below are our social networks where you can watch our activities and events</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/AlaTooInternationalUniversity/" target="_blank"
+                        class="fab fa-facebook-f"></a>
+                    <a href="https://www.youtube.com/@aiutv9125" target="_blank" class="fab fa-youtube"></a>
+                    <a href="https://www.instagram.com/alatoo.edu.kg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.tiktok.com/@alatoo.uni?_t=8lQyfPi7aBm&_r=1" target="_blank"
+                        class="fab fa-tiktok"></a>
+                    <a href="https://t.me/+37SFo81Jl4RiMTU6" target="_blank" class="fab fa-telegram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+996 (777) 77 77 77</p>
+                <a href="mailto:info@alatoo.edu.kg" class="link">info@alatoo.edu.kg</a>
+            </div>
+
+
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>
+                    Country: Kyrgyzstan<br>
+                    City: Bishkek <br>
+                    1/8 Ankara street<br>
+                    <a href="https://maps.app.goo.gl/96VDVNbLFsRVMkeJ9" target="_blank">google maps localization</a>
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>main web-site</h3>
+                <p>
+                    <a href="https://alatoo.edu.kg/#" target="_blank">our main web-site</a>
+                </p>
+            </div>
+            
+        </div>
+        <div class="footer-1">
+            <p>&copy International Ala-Too University 2024</p>
+        </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="{% static 'script.js' %}"></script>
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const subject = `Message from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
+            const mailtoLink = `mailto:bekzo051102@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+    
+</body>
+
+</html>

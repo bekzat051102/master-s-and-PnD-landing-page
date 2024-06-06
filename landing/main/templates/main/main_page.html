@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block programs %}
+{% for program in all_programs %}
+<div class="box">
+    <div class="image shine">
+        <img src="{{ program.photo.url }}" alt="">
+    </div>
+    <div class="content">
+        <p>Updated: {{ program.date }}</p>
+        <h3>{{ program.title }}</h3>
+        <div class="icons">
+            <span><i class="far fa-bookmark"></i>Credits: {{ program.credits }}</span>
+            <span><i class="far fa-clock"></i>{{ program.time }}</span>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+{% block teachers %}
+{% for teacher in all_teachers %}
+<div class="box">
+    <div class="image">
+        <img src="{{ teacher.photo.url }}" alt="">
+    </div>
+    <div class="content">
+        <h3>{{ teacher.full_name }}</h3>
+        <span>{{ teacher.position }}</span>
+    </div>
+</div>
+{% endfor %}
+{% endblock%}
+{% block content_news %}
+{% for one_news in all_news|slice:":3" %}
+<div class="box">
+    <div class="image shine">
+        <img src="{{one_news.image.url}}" alt="">
+        <h3>{{one_news.date}}</h3>
+    </div>
+    <div class="content">
+        <h3>{{one_news.title}}</h3>
+        <p>{{one_news.text}}</p>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
