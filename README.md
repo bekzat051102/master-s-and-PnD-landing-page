@@ -1,6 +1,6 @@
 # Master's and PhD degrees landing page
 
-# [logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Falatoo.edu.kg%2F&psig=AOvVaw1nZvRc3ISmXt5g4OGzs2-l&ust=1717780737290000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDhlIa-x4YDFQAAAAAdAAAAABAE)
+This landing page is designed to provide comprehensive information about the master's and PhD programs offered by Ala-Too International University. The page includes key details about the programs, admission requirements, faculty information, student resources, and contact information.
 
 ![screen1](https://github.com/bekzat051102/master-s-and-PnD-landing-page/assets/153498060/fc2ea773-188a-4fa9-ad82-7f9439074447)
 
