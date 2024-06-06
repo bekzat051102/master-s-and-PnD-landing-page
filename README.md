@@ -1,5 +1,7 @@
 # Master's and PhD degrees landing page
 
+# [logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Falatoo.edu.kg%2F&psig=AOvVaw1nZvRc3ISmXt5g4OGzs2-l&ust=1717780737290000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDhlIa-x4YDFQAAAAAdAAAAABAE)
+
 ![screen1](https://github.com/bekzat051102/master-s-and-PnD-landing-page/assets/153498060/fc2ea773-188a-4fa9-ad82-7f9439074447)
 
 ![screen2](https://github.com/bekzat051102/master-s-and-PnD-landing-page/assets/153498060/0b667fc3-f524-4f92-a812-4ebf367ef688)
