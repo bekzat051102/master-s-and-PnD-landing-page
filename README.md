@@ -48,3 +48,10 @@ This landing page is designed to provide comprehensive information about the mas
 `py manage.py runserver`
 
 By following these steps, your web application should be up and running.
+
+
+
+![screen6](https://github.com/bekzat051102/master-s-and-PnD-landing-page/assets/153498060/df32f3de-c95e-4a16-8b03-4e5cee727a29)
+
+## Django admin application
+here you add new information(about_university, news, teachers and programs)
