@@ -32,5 +32,16 @@ This landing page is designed to provide comprehensive information about the mas
 ## To launch the web page, follow these steps:
 - After downloading, open the Command Prompt (cmd).
 - Navigate to the downloaded folder containing the application:
-'cd path_to_folder'
 
+`cd path_to_folder`
+- Install Django:
+
+`pip install django`
+-Activate the virtual environment:
+
+`lp_venv\Scripts\activate`
+- Navigate to the application folder:
+`cd landing`
+-Finally, run the application:
+`py manage.py runserver`
+By following these steps, your web application should be up and running.
