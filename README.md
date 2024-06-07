@@ -32,5 +32,5 @@ This landing page is designed to provide comprehensive information about the mas
 ## To launch the web page, follow these steps:
 - After downloading, open the Command Prompt (cmd).
 - Navigate to the downloaded folder containing the application:
-console.log('cd path_to_folder');
+'cd path_to_folder'
 
